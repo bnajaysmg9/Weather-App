@@ -29,7 +29,7 @@ jQuery, bootstrap, OpenSeaDragon Annotorious (used for image tagging)
 <b>Main page</b>
 <ul>
 <li>Drop down with all the cities.</li>
-<li>Section to to show the temperature details of the city selected by user.</li>
+<li>Section to show the temperature details of the city selected by user.</li>
 <li>Save button to save the user selection. User cannot save unless logged in (Message displayed if user tries to save without logging in)</li>
 </ul>
 
