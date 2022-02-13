@@ -28,16 +28,16 @@ jQuery, bootstrap, OpenSeaDragon Annotorious (used for image tagging)
 
 <b>Main page</b>
 <ul>
-<li>This page contains, </li>
-<li>1. A drop down with all the cities.</li>
-<li>2. Section to to show the temperature details of the city selected by user.</li>
-<li>3. Save button to save the user selection. User cannot save unless logged in (Message displayed if user tries to save without logging in)</li>
+This page contains, 
+<li>A drop down with all the cities.</li>
+<li>Section to to show the temperature details of the city selected by user.</li>
+<li>Save button to save the user selection. User cannot save unless logged in (Message displayed if user tries to save without logging in)</li>
 </ul>
 
 <b>Login Page</b>
 <ul>
-<li>1. User authentication is done in this page.</li>
-<li>2. On unsuccessful login error message is shown.</li>
+<li>User authentication is done in this page.</li>
+<li>On unsuccessful login error message is shown.</li>
 </ul> 
 
 <li>On successful login user will be navigated to,</li>
