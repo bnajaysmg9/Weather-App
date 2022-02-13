@@ -26,8 +26,8 @@ jQuery, bootstrap, OpenSeaDragon Annotorious (used for image tagging)
 
 <h4>Usage</h4>
 
-<b>Main page</b>
-<b>This page contains</b>, 
+<b>Main page</b></n>
+This page contains, 
 
 <ul>
 <li>A drop down with all the cities.</li>
