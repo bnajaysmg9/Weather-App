@@ -37,13 +37,8 @@ This page contains,
 <b>Login Page</b>
 <ul>
 <li>User authentication is done in this page.</li>
-<li>On unsuccessful login error message is shown.</li>
+<li>On unsuccessful login error message is shown.On successful login user will be navigated to Main page</li>
 </ul> 
-
-<li>On successful login user will be navigated to,</li>
-<ul>
-<li>Main page</li>
-</ul>
 
 
 
