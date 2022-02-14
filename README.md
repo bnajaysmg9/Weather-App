@@ -48,7 +48,7 @@ jQuery, bootstrap, OpenSeaDragon Annotorious (used for image tagging)
 <li>User will be redirected to Login Page</li>
 </ul>
 
-![alt text](https://github.com/bnajaysmg9/Weather-App/blob/main/Images/Sign_Up.jpg)
+![alt text](https://github.com/bnajaysmg9/Weather-App/blob/main/Images/SignUp.jpg)
 
 
 
