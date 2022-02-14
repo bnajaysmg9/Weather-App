@@ -36,8 +36,9 @@ jQuery, bootstrap.
 ![alt text](https://github.com/bnajaysmg9/Weather-App/blob/main/Images/Dashboard.jpg)
       
 <li>Successfully message is displayed in case user is logged in and clicks on save.</li>
-![alt text](https://github.com/bnajaysmg9/Weather-App/blob/main/Images/Dashboard_Success.jpg)
+
 </ul>
+![alt text](https://github.com/bnajaysmg9/Weather-App/blob/main/Images/Dashboard_Success.jpg)
 <b>Login Page</b>
 <ul>
 <li>User authentication is done in this page.</li>
