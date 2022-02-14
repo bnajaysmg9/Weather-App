@@ -22,7 +22,7 @@ Technology Stack,
 
 Plugins Used,
 
-jQuery, bootstrap, OpenSeaDragon Annotorious (used for image tagging)
+jQuery, bootstrap.
 
 <h4>Usage</h4>
 
@@ -31,9 +31,13 @@ jQuery, bootstrap, OpenSeaDragon Annotorious (used for image tagging)
 <li>Drop down with all the cities.</li>
 <li>Section to show the temperature details of the city selected by user.</li>
 <li>Save button to save the user selection. User cannot save unless logged in (Message displayed if user tries to save without logging in)</li>
-</ul>
+
 
 ![alt text](https://github.com/bnajaysmg9/Weather-App/blob/main/Images/Dashboard.jpg)
+      
+<li>Successfully saved in case user is logged in and clicks on save.</li>
+      ![alt text](https://github.com/bnajaysmg9/Weather-App/blob/main/Images/Dashboard_Logged_In.jpg)
+</ul>
 <b>Login Page</b>
 <ul>
 <li>User authentication is done in this page.</li>
