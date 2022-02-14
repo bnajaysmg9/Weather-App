@@ -5,7 +5,7 @@ This assignment help users to check temperature of different cities.
 
 <h4>Pre-Requisites</h4>
 
-SmartCow includes below dependency files,
+Weather App includes below dependency files,
 
 <ul>
 <li>requirement.txt - This file includes python packages</li>
