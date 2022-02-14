@@ -15,8 +15,8 @@ SmartCow includes below dependency files,
 Technology Stack,
 
 <ul>
-<li>Python 3.8</li>
-<li>Django 3.2</li>
+<li>Python 3.10</li>
+<li>Django 4.0.2</li>
 <li>MySQL</li>
 </ul>
 
@@ -33,14 +33,22 @@ jQuery, bootstrap, OpenSeaDragon Annotorious (used for image tagging)
 <li>Save button to save the user selection. User cannot save unless logged in (Message displayed if user tries to save without logging in)</li>
 </ul>
 
+![alt text](https://github.com/bnajaysmg9/Weather-App/blob/main/Images/Dashboard.JPG)
 <b>Login Page</b>
 <ul>
 <li>User authentication is done in this page.</li>
 <li>On unsuccessful login error message is shown.On successful login user will be navigated to Main page</li>
 </ul> 
 
+![alt text](https://github.com/bnajaysmg9/Weather-App/blob/main/Images/Login.JPG)
+<b>SingUp Page</b>
+<ul>
+<li>All the field are required fields</li>
+<li>On successful sign up user will be created and user details will be stored, Password will be hashed and stored in database</li>
+<li>User will be redirected to Login Page</li>
+</ul>
 
-
+![alt text](https://github.com/bnajaysmg9/Weather-App/blob/main/Images/Sign_Up.JPG)
 
 
 
