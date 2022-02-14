@@ -28,7 +28,7 @@ jQuery, bootstrap.
 
 <b>Main page</b>
 <ul>
-<li>Drop down with all the cities.</li>
+<li>Drop down with all the cities(Restricted to India).</li>
 <li>Section to show the temperature details of the city selected by user.</li>
 <li>Save button to save the user selection. User cannot save unless logged in (Message displayed if user tries to save without logging in)</li>
 
@@ -36,7 +36,7 @@ jQuery, bootstrap.
 ![alt text](https://github.com/bnajaysmg9/Weather-App/blob/main/Images/Dashboard.jpg)
       
 <li>Successfully saved in case user is logged in and clicks on save.</li>
-      ![alt text](https://github.com/bnajaysmg9/Weather-App/blob/main/Images/Dashboard_Logged_In.jpg)
+![alt text](https://github.com/bnajaysmg9/Weather-App/blob/main/Images/Dashboard_Logged_In.jpg)
 </ul>
 <b>Login Page</b>
 <ul>
