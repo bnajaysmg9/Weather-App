@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App Login</title>
+    <style>
+        #errormsg{
+            color: #91100d;
+        }
+        label.error {
+  color: #91100d;
+    font-size:12px;
+}
+    </style>
+</head>
+<body>
+<form id="loginForm" class="container" style="background-color: #a0c2e7;width: 15%; margin-left: 40%;border-radius: 25px 25px 25px 25px; margin-top: 10%" action="." method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% if error %}
+    <span id="errormsg" >Invalid Username/Password</span>
+    {% endif %}
+    <div class="form-group" style="margin-left: 15%;" >
+<h6  >Weather App Login</h6>
+    </div>
+    <div class="form-group" >
+<input type="text" class="form-control" placeholder="Username" name="username" />
+         </div>
+    <div class="form-group" >
+<input type="password" class="form-control" placeholder="Password" id="password" name="password" />
+         </div>
+    <div class="form-group" >
+<input type="submit" style="width: 95%;" class="btn btn-primary" value="Login" >
+         </div>
+    <div class="form-group" >
+<a href="/signup" class="btn btn-link" style="margin-left: 28%;"> Sign Up</a>
+         </div>
+</form>
+</body>
+<script>
+$(document).ready(function () {
+    jQuery.extend(jQuery.validator.messages, {
+        equalTo: "Please enter the same password."
+    });
+    $('#loginForm').validate({
+        ignore: ":not(:visible)",
+        rules: {
+
+            username: {
+                required: true,
+            },
+
+            password: {
+                required: true,
+            },
+
+
+
+
+        },
+
+        messages: {
+
+
+            username: {
+                required: 'Please enter username.'
+            },
+
+            password: {
+                required: 'Please enter your password.'
+            },
+
+
+
+
+        },
+
+        submitHandler: function (form) {
+
+            form[0].submit();
+
+        }
+
+
+    });
+});
+</script>
+</html>
