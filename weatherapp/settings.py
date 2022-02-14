@@ -79,7 +79,7 @@ DATABASES = {
             'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
             'NAME': 'weatherapp',                      # Or path to database file if using sqlite3.
             'USER': 'admin',                      # Not used with sqlite3.
-            'PASSWORD': 'AWSDatabase123',                  # Not used with sqlite3.
+            'PASSWORD': 'test',                  # Not used with sqlite3.
             'HOST': 'weatherapp.cbblrss9pdrs.us-east-1.rds.amazonaws.com',
             'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
         }
