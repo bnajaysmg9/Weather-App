@@ -18,6 +18,7 @@ Technology Stack,
 <li>Python 3.10</li>
 <li>Django 4.0.2</li>
 <li>MySQL</li>
+<li>AWS</li>
 </ul>
 
 Plugins Used,
