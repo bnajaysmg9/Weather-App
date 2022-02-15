@@ -3,6 +3,7 @@ import json
 from functools import wraps
 import random
 
+import boto3
 from django.shortcuts import render
 from django.utils.encoding import smart_str
 from django.views.decorators.csrf import csrf_exempt
@@ -66,3 +67,18 @@ def openFile(filename):
     file = open(filename, encoding='utf8')
     cities = json.loads(file.read())
     return cities
+
+def get_file(filename):
+
+
+
+
+    client =  boto3.client('s3',
+                      aws_access_key_id=configs.AWS_ACCESS_KEY_ID,
+                      aws_secret_access_key=configs.AWS_SECRET_ACCESS_KEY,
+                      region_name='us-east-1',
+                      )
+    file= client.get_object(Bucket=configs.BUCKET_NAME, Key=filename)
+    body = file['Body']
+    data=body.read().decode('utf-8')
+    return json.loads(data)

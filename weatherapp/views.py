@@ -4,7 +4,7 @@ from functools import wraps
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 
-from .helpers import enc_password, get_hexdigest,get_saved_data,login_required,openFile
+from .helpers import enc_password, get_hexdigest, get_saved_data, login_required, openFile, get_file
 from .models import *
 from django.http import HttpResponseRedirect, HttpResponse, HttpResponseBadRequest
 from rest_framework import viewsets
@@ -34,15 +34,17 @@ class dashboard(viewsets.ModelViewSet):
     serializer_class = WeatherSerializer
     @get_saved_data()
     def list(self, request, *args, **kwargs):
-        cities = openFile('city.list.json')
+        # cities = openFile('city.list.json')
+        cities= get_file("city.list.json")
         self.context_dict['cities'] = [[city['id'],city['name']] for city in cities  if city['country']=='IN']
 
         return render(request, 'dashboard.html', self.context_dict)
     def create(self, request, *args, **kwargs):
         context_dict = {}
-        url=configs.WeatherURL%(request.POST.get('city'),'92dba5ed85867c659a25ad9380d851af')
+        url=configs.WeatherURL%(request.POST.get('city'),configs.Weather_API_Key)
         result=requests.get(url)
-        cities = openFile('city.list.json')
+        # cities = openFile('city.list.json')
+        cities = get_file("city.list.json")
         context_dict['cities'] = [[city['id'],city['name']] for city in cities if city['country'] == 'IN']
         context_dict['city_selected']=request.POST.get('city')
         context_dict['weather'] = str(json.loads(result.content)['main']['temp'] )+ ' C'
